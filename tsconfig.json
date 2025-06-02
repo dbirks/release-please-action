@@ -1,6 +1,8 @@
 {
   "extends": "./node_modules/gts/tsconfig-google.json",
   "compilerOptions": {
+    "esModuleInterop": true,
+    "target": "ES2020",
     "allowSyntheticDefaultImports": true,
     "rootDir": ".",
     "outDir": "build",

@@ -17,7 +17,7 @@ import * as action from '../src/index';
 import * as assert from 'assert';
 import * as core from '@actions/core';
 import * as sinon from 'sinon';
-import * as nock from 'nock';
+import nock from 'nock';
 import {RestoreFn} from 'mocked-env';
 import mockedEnv from 'mocked-env';
 

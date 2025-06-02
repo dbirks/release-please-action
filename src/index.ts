@@ -13,6 +13,7 @@
 // limitations under the License.
 
 import * as core from '@actions/core';
+import fetch from 'node-fetch';
 import {GitHub, Manifest, CreatedRelease, PullRequest, VERSION} from 'release-please';
 
 const DEFAULT_CONFIG_FILE = 'release-please-config.json';
@@ -148,6 +149,7 @@ function getGitHubInstance(inputs: ActionInputs): Promise<GitHub> {
   }
 
   const githubCreateOpts = {
+    request: { fetch },
     proxy,
     owner,
     repo,
